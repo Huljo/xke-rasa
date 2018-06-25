@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+
+  rasanlu:
+    image: rasa/rasa_nlu:0.12.3-spacy
+    container_name: rasanlu
+    command: run sh -c "python -m rasa_nlu.server -c config/config_nlu_spacy.yml --path=/app/projects --response_log=/app/request_logs --debug"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./request_logs:/app/request_logs
+      - ./projects:/app/projects
+      - ./config:/app/config
+    ports:
+        - "5000:5000"
+    networks:
+      - back-tier
+
+  rasaui:
+    image: paschmann/rasa-ui:latest
+    container_name: rasaui
+    environment:
+      - rasanluendpoint=http://rasanlu:5000
+      - rasacoreendpoint=http://rasacore:5001
+      - jwtsecret=dcu21d56x91ei45sp1lP
+    ports:
+      - "5002:5001"
+    networks:
+      - back-tier
+
+volumes:
+  db-data:
+
+networks:
+  back-tier:

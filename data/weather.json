@@ -1,0 +1,538 @@
+﻿{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [{"value": "los angeles", "synonyms": ["la"]}],
+    "common_examples": [
+      {
+        "text": "tell me if it is going to rain at the end of the day in rio de janeiro",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 52,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          },
+          {"start": 56, "end": 70, "value": "rio de janeiro", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain today in la",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 31, "end": 36, "value": "today", "entity": "weatherDate"},
+          {"start": 40, "end": 42, "value": "los angeles", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain today in tokyo",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 31, "end": 36, "value": "today", "entity": "weatherDate"},
+          {"start": 40, "end": 45, "value": "tokyo", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain tomorrow morning in london",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 47,
+            "value": "tomorrow morning",
+            "entity": "weatherDate"
+          },
+          {"start": 51, "end": 57, "value": "london", "entity": "city"}
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect this afternoon in tel aviv please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 37,
+            "end": 51,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          },
+          {"start": 55, "end": 63, "value": "tel aviv", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain this afternoon in la",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 45,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          },
+          {"start": 49, "end": 51, "value": "los angeles", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain today in rio de janeiro",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 31, "end": 36, "value": "today", "entity": "weatherDate"},
+          {"start": 40, "end": 54, "value": "rio de janeiro", "entity": "city"}
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect today in tel aviv please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 37, "end": 42, "value": "today", "entity": "weatherDate"},
+          {"start": 46, "end": 54, "value": "tel aviv", "entity": "city"}
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect at the end of the day in paris please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 37,
+            "end": 58,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          },
+          {"start": 62, "end": 67, "value": "paris", "entity": "city"}
+        ]
+      },
+      {
+        "text": "will it be sunny in tokyo at the end of the day ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 25, "value": "tokyo", "entity": "city"},
+          {
+            "start": 26,
+            "end": 47,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          }
+        ]
+      },
+      {
+        "text": "will it be sunny in la today ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 22, "value": "los angeles", "entity": "city"},
+          {"start": 23, "end": 28, "value": "today", "entity": "weatherDate"}
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect tomorrow morning in paris please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 37,
+            "end": 53,
+            "value": "tomorrow morning",
+            "entity": "weatherDate"
+          },
+          {"start": 57, "end": 62, "value": "paris", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain this afternoon in london",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 45,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          },
+          {"start": 49, "end": 55, "value": "london", "entity": "city"}
+        ]
+      },
+      {
+        "text": "will it be sunny in tokyo tomorrow morning ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 25, "value": "tokyo", "entity": "city"},
+          {
+            "start": 26,
+            "end": 42,
+            "value": "tomorrow morning",
+            "entity": "weatherDate"
+          }
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect today in la please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 37, "end": 42, "value": "today", "entity": "weatherDate"},
+          {"start": 46, "end": 48, "value": "los angeles", "entity": "city"}
+        ]
+      },
+      {
+        "text": "will it be sunny in tokyo this afternoon ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 25, "value": "tokyo", "entity": "city"},
+          {
+            "start": 26,
+            "end": 40,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          }
+        ]
+      },
+      {
+        "text": "will it be sunny in paris today ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 25, "value": "paris", "entity": "city"},
+          {"start": 26, "end": 31, "value": "today", "entity": "weatherDate"}
+        ]
+      },
+      {
+        "text": "will it be sunny in paris this afternoon ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 25, "value": "paris", "entity": "city"},
+          {
+            "start": 26,
+            "end": 40,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          }
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain at the end of the day in tel aviv",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 52,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          },
+          {"start": 56, "end": 64, "value": "tel aviv", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain this afternoon in rio de janeiro",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 45,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          },
+          {"start": 49, "end": 63, "value": "rio de janeiro", "entity": "city"}
+        ]
+      },
+      {
+        "text": "What is the weather in tel aviv ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 23, "end": 31, "value": "tel aviv", "entity": "city"}
+        ]
+      },
+      {
+        "text": "will it be sunny in rio de janeiro this afternoon ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 34, "value": "rio de janeiro", "entity": "city"},
+          {
+            "start": 35,
+            "end": 49,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          }
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain tomorrow morning in tel aviv",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 47,
+            "value": "tomorrow morning",
+            "entity": "weatherDate"
+          },
+          {"start": 51, "end": 59, "value": "tel aviv", "entity": "city"}
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect at the end of the day in rio de janeiro please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 37,
+            "end": 58,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          },
+          {"start": 62, "end": 76, "value": "rio de janeiro", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain tomorrow morning in tokyo",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 47,
+            "value": "tomorrow morning",
+            "entity": "weatherDate"
+          },
+          {"start": 51, "end": 56, "value": "tokyo", "entity": "city"}
+        ]
+      },
+      {
+        "text": "will it be sunny in london today ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 26, "value": "london", "entity": "city"},
+          {"start": 27, "end": 32, "value": "today", "entity": "weatherDate"}
+        ]
+      },
+      {
+        "text": "will it be sunny in paris at the end of the day ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 25, "value": "paris", "entity": "city"},
+          {
+            "start": 26,
+            "end": 47,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          }
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain tomorrow morning in la",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 47,
+            "value": "tomorrow morning",
+            "entity": "weatherDate"
+          },
+          {"start": 51, "end": 53, "value": "los angeles", "entity": "city"}
+        ]
+      },
+      {
+        "text": "will it be sunny in los angeles this afternoon ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 31, "value": "los angeles", "entity": "city"},
+          {
+            "start": 32,
+            "end": 46,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          }
+        ]
+      },
+      {
+        "text": "will it be sunny in tel aviv tomorrow morning ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 28, "value": "tel aviv", "entity": "city"},
+          {
+            "start": 29,
+            "end": 45,
+            "value": "tomorrow morning",
+            "entity": "weatherDate"
+          }
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain at the end of the day in la",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 52,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          },
+          {"start": 56, "end": 58, "value": "los angeles", "entity": "city"}
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect tomorrow morning in los angeles please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 37,
+            "end": 53,
+            "value": "tomorrow morning",
+            "entity": "weatherDate"
+          },
+          {"start": 57, "end": 68, "value": "los angeles", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain at the end of the day in paris",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 52,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          },
+          {"start": 56, "end": 61, "value": "paris", "entity": "city"}
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect this afternoon in rio de janeiro please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 37,
+            "end": 51,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          },
+          {"start": 55, "end": 69, "value": "rio de janeiro", "entity": "city"}
+        ]
+      },
+      {
+        "text": "What is the weather in tokyo ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 23, "end": 28, "value": "tokyo", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain today in tel aviv",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 31, "end": 36, "value": "today", "entity": "weatherDate"},
+          {"start": 40, "end": 48, "value": "tel aviv", "entity": "city"}
+        ]
+      },
+      {
+        "text": "will it be sunny in tel aviv today ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 28, "value": "tel aviv", "entity": "city"},
+          {"start": 29, "end": 34, "value": "today", "entity": "weatherDate"}
+        ]
+      },
+      {
+        "text": "What is the weather in rio de janeiro ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 23, "end": 37, "value": "rio de janeiro", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain this afternoon in tel aviv",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 45,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          },
+          {"start": 49, "end": 57, "value": "tel aviv", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain at the end of the day in london",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 52,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          },
+          {"start": 56, "end": 62, "value": "london", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain this afternoon in tokyo",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 45,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          },
+          {"start": 49, "end": 54, "value": "tokyo", "entity": "city"}
+        ]
+      },
+      {
+        "text": "will it be sunny in tel aviv at the end of the day ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 28, "value": "tel aviv", "entity": "city"},
+          {
+            "start": 29,
+            "end": 50,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          }
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect tomorrow morning in tel aviv please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 37,
+            "end": 53,
+            "value": "tomorrow morning",
+            "entity": "weatherDate"
+          },
+          {"start": 57, "end": 65, "value": "tel aviv", "entity": "city"}
+        ]
+      },
+      {
+        "text": "tell me if it is going to rain at the end of the day in los angeles",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 31,
+            "end": 52,
+            "value": "at the end of the day",
+            "entity": "weatherDate"
+          },
+          {"start": 56, "end": 67, "value": "los angeles", "entity": "city"}
+        ]
+      },
+      {
+        "text": "what kind of weather should I expect this afternoon in tokyo please",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {
+            "start": 37,
+            "end": 51,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          },
+          {"start": 55, "end": 60, "value": "tokyo", "entity": "city"}
+        ]
+      },
+      {
+        "text": "will it be sunny in tel aviv this afternoon ?",
+        "intent": "sampleGetWeather",
+        "entities": [
+          {"start": 20, "end": 28, "value": "tel aviv", "entity": "city"},
+          {
+            "start": 29,
+            "end": 43,
+            "value": "this afternoon",
+            "entity": "weatherDate"
+          }
+        ]
+      }
+    ]
+  }
+}

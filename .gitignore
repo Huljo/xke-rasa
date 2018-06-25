@@ -1,0 +1,3 @@
+logs/*.log
+request_logs/*.logs
+.idea
