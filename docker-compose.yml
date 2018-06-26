@@ -5,7 +5,7 @@ services:
   rasanlu:
     image: rasa/rasa_nlu:0.12.3-spacy
     container_name: rasanlu
-    command: run sh -c "python -m rasa_nlu.server -c config/config_nlu_spacy.yml --path=/app/projects --response_log=/app/request_logs --debug"
+    command: run sh -c "python -m rasa_nlu.server -c config/config_nlu_keyword.yml --path=/app/projects --response_log=/app/request_logs --debug"
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
