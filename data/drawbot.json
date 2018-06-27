@@ -1,0 +1,78 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greeting",
+        "text": "Hello",
+        "entities": []
+      },
+      {
+        "intent": "greeting",
+        "text": "Hello John",
+        "entities": []
+      },
+      {
+        "intent": "greeting",
+        "text": "Hello you",
+        "entities": []
+      },
+      {
+        "intent": "greeting",
+        "text": "Hello bot",
+        "entities": []
+      },
+      {
+        "intent": "draw_request",
+        "text": "draw a baloon",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "baloon",
+            "entity": "subject",
+            "entity_id": 1
+          }
+        ]
+      },
+      {
+        "intent": "draw_request",
+        "text": "draw me a bird",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "bird",
+            "entity": "subject",
+            "entity_id": 1
+          }
+        ]
+      },
+      {
+        "intent": "draw_request",
+        "text": "can you draw a horse please ?",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "horse",
+            "entity": "subject",
+            "entity_id": 1
+          }
+        ]
+      },
+      {
+        "intent": "draw_request",
+        "text": "do you know how to draw a unicorn ?",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "unicorn",
+            "entity": "subject",
+            "entity_id": 1
+          }
+        ]
+      }
+    ]
+  }
+}
