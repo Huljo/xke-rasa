@@ -1,3 +1,7 @@
 logs/*.log
 request_logs/*.logs
 .idea
+projects/*
+!projects/.gitkeep
+!logs/.gitkeep
+!request_logs/.gitkeep
